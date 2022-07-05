@@ -81,3 +81,27 @@ se (A > B) então
   imprimir A
   imprimir B
 ```
+***
+
+# Aula 2
+### Compiladores e Interpretadores
+* Python é uma linguagem interpretada
+ * Baixar python e testar no cmd `python --version`
+* Instalação do ambiente Jupyter `pip install jupyter`
+* `jupyter notebook` --> abre o caderno no navegador
+
+## Introdução à Python
+* Comandos de entrada e de saída (print)
+* **Em outras linguagens de programação, como C e Java, utiliza-se aspas simples '' para caracteres e aspas duplas "" para textos**
+### Variáveis para o armazenamento de informações
+```
+mensagem = 'pyhton é massa'
+print (mensagem)
+```
+* tipagem de dados
+```
+int(input('Ditite um número: '))
+```
+* não começar nome de variáveis com número
+* não utilizar caracteres especiais
+* utilizar _ para separar palavras

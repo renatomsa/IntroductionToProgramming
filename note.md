@@ -105,3 +105,55 @@ int(input('Ditite um número: '))
 * não começar nome de variáveis com número
 * não utilizar caracteres especiais
 * utilizar _ para separar palavras
+
+# Aula 3
+## Tipos primitivos de Python (linguagens de programação já utilizam)
+### Tipos estáticos e Tipos dinâmicos
+
+* tipos estáticos
+ * define estaticamente o tipo de dado que será armazenado
+ * evita erros de atribuição de dados de outro tipo para uma variável
+* tipos dinâmicos
+ * tipos podem mudar de acordo com as diferentes atribuições
+ * programador fica mais livre em relação ao uso de dados
+
+### Tipos Numéricos
+* integers : ... -1, -2, 0, 1, 2 ...
+* floats: 2.24, 32.2E-5
+
+### Símbolos especiais
+* \n - quebrar a linha
+* \t - deslocamento de uma tabulação
+* \ - não encerra a string quando adicionada uma aspas
+
+### Operadores
+* "+" concatenador
+
+### Manipulações com Strings
+* var.title() - transforma as primeiras letras da String em Maiúscula
+* var.upper() - toda a frase em maiúscula
+* var.lower() - toda a frase em minúscula
+* var.split() - lista de palavras
+* var.join() - junta as palavras
+
+No Jupyter - `%config IPCompleter.greedy=True`
+
+### Formatação de Saída
+* Método format
+ * Inclui operadores de concatenação
+ * Insere os espaços corretamente
+ * Converte explicitamente os tipos numéricos para strings
+```
+nome = 'Augusto'
+idade = 18
+print('Parabéns, {0}! Hoje você completa {1} anos!'.format(nome,idade))
+```
+* não é necessário colocar o índice caso queira colocar na ordem em que aparecem as variáveis
+
+```
+print(f'Parabéns, {nome}! Hoje você completa {idade} anos!)
+```
+outro exemplo de utilização do format (no início do print)
+
+* // - deixa a divisão sem resto
+

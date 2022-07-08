@@ -157,3 +157,29 @@ outro exemplo de utilização do format (no início do print)
 
 * // - deixa a divisão sem resto
 
+# Aula 4
+## Expressões Lógicas
+
+```
+ if expressao1:
+  #bloco 1
+ elif expressao2:
+  #bloco 2
+ else:
+  #ultimobloco
+```
+### Coerção de Tipos
+* forçar a conversão de tipos
+
+### Operadores Lógicos e Relacionais
+* == (igual), =! (diferente) etc
+* abreviações - a =+ 2 == a = a + 2
+
+```
+while (#Expressão_booleana):
+  #bloco
+```
+```
+for i in range (0,10):
+  print i
+```

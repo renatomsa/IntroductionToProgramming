@@ -14,9 +14,13 @@ elif (passo1 == 'Balancê'):
     pontuacao1 = 50
 elif (passo1 == 'Passeio'):
     pontuacao1 = 70
+elif (passo1 == 'Túnel'):
+    pontuacao1 = 0
 elif (passo1 == 'Serrote'):
     pontuacao1 = 100
 elif (passo1 == 'Casamento'):
+    pontuacao1 = 0
+elif (passo1 == 'Despedida'):
     pontuacao1 = 0
 else:
     pontuacao1 = 99999999
@@ -28,10 +32,12 @@ elif (passo2 == 'Balancê'):
 elif (passo2 == 'Passeio'):
     pontuacao2 = pontuacao1 + 70
 elif (passo2 == 'Túnel'):
-    pontuacao2 = (pontuacao1 - 0.1 * pontuacao1)
+    pontuacao2 = pontuacao1 * 0.9
 elif (passo2 == 'Serrote'):
     pontuacao2 = pontuacao1 + 100
 elif (passo2 == 'Casamento'):
+    pontuacao2 = pontuacao1 + 0
+elif (passo2 == 'Despedida'):
     pontuacao2 = pontuacao1 + 0
 else:
     pontuacao2 = 99999999
@@ -43,10 +49,12 @@ elif (passo3 == 'Balancê'):
 elif (passo3 == 'Passeio'):
     pontuacao3 = pontuacao2 + 70
 elif (passo3 == 'Túnel'):
-    pontuacao3 = pontuacao2 + (pontuacao2 - 0.1 * pontuacao2)
+    pontuacao3 = pontuacao2 * 0.9
 elif (passo3 == 'Serrote'):
     pontuacao3 = pontuacao2 + 100
 elif (passo3 == 'Casamento'):
+    pontuacao3 = pontuacao2 + 0
+elif (passo2 == 'Despedida'):
     pontuacao3 = pontuacao2 + 0
 else:
     pontuacao3 = 99999999
@@ -58,10 +66,12 @@ elif (passo4 == 'Balancê'):
 elif (passo4 == 'Passeio'):
     pontuacao4 = pontuacao3 + 70
 elif (passo4 == 'Túnel'):
-    pontuacao4 = pontuacao3 + (pontuacao3 - 0.1 * pontuacao3)
+    pontuacao4 = pontuacao3 * 0.9
 elif (passo4 == 'Serrote'):
     pontuacao4 = pontuacao3 + 100
 elif (passo4 == 'Casamento'):
+    pontuacao4 = pontuacao3 + 0
+elif (passo2 == 'Despedida'):
     pontuacao4 = pontuacao3 + 0
 else:
     pontuacao4 = 99999999
@@ -73,7 +83,7 @@ elif (passo5 == 'Balancê'):
 elif (passo5 == 'Passeio'):
     pontuacao5 = pontuacao4 + 70
 elif (passo5 == 'Túnel'):
-    pontuacao5 = pontuacao4 + (pontuacao4 - 0.1 * pontuacao4)
+    pontuacao5 = pontuacao4 * 0.9
 elif (passo5 == 'Serrote'):
     pontuacao5 = pontuacao4 + 100
 elif (passo5 == 'Casamento'):
@@ -91,6 +101,7 @@ else:
     pontuacao_final = pontuacao5
 
 if (pontuacao_final > 9999):
+    pontuacao_final = 0
     print (f'Poxa, {nome_quadrilha}. Por utilizarem de algum passo não permitido vocês tiveram a pontuação zerada.')
 else:
     print (f'Parabéns, {nome_quadrilha}! Bela apresentação. A pontuação foi de {pontuacao_final:.1f}!')

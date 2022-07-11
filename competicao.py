@@ -5,7 +5,6 @@ passo3 = input()
 passo4 = input()
 passo5 = input()
 
-passos_permitidos = 'Cumprimento' or 'Balancê' or 'Passeio' or 'Túnel' or 'Serrote' or 'Casamento' or 'Despedida'
 
 
 if (passo1 == 'Cumprimento'):
@@ -93,7 +92,6 @@ elif (passo5 == 'Despedida'):
 else:
     pontuacao5 = 99999999
 
-passos_validacao = passo1 and passo2 and passo3 and passo4 and passo5
 
 if (passo1 == 'Casamento' or passo2 == 'Casamento' or passo3 == 'Casamento' or passo4 == 'Casamento' or passo5 == 'Casamento'):
     pontuacao_final = pontuacao5 * 2
